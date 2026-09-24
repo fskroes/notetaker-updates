@@ -6,6 +6,15 @@
     <description>Updates for Notetaker</description>
     <language>en</language>
     <item>
+      <title>Notetaker 0.1.0 beta 3</title>
+      <pubDate>Thu, 24 Sep 2026 12:09:48 GMT</pubDate>
+      <sparkle:version>3</sparkle:version>
+      <sparkle:shortVersionString>0.1.0</sparkle:shortVersionString>
+      <sparkle:minimumSystemVersion>26.0</sparkle:minimumSystemVersion>
+      <sparkle:releaseNotesLink>https://github.com/fskroes/notetaker-updates/releases/tag/v0.1.0-beta.3</sparkle:releaseNotesLink>
+      <enclosure url="https://github.com/fskroes/notetaker-updates/releases/download/v0.1.0-beta.3/Notetaker-0.1.0-beta.3.zip" length="18420660" type="application/octet-stream" sparkle:edSignature="7vlL3MSoZXaYR2Sl+obV2DIhIMRASYHctCOGTGlV5Is746wVyMY6QFQOeLXq9iPUIGE77GFI3OQv7rxHLK50Ag==" />
+    </item>
+    <item>
       <title>Notetaker 0.1.0 beta 2</title>
       <pubDate>Thu, 24 Sep 2026 10:52:44 GMT</pubDate>
       <sparkle:version>2</sparkle:version>
