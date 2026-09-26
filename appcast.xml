@@ -6,6 +6,45 @@
     <description>Updates for Notetaker</description>
     <language>en</language>
     <item>
+      <title>Notetaker 0.1.0 beta 4</title>
+      <pubDate>Sat, 26 Sep 2026 13:04:02 GMT</pubDate>
+      <sparkle:version>4</sparkle:version>
+      <sparkle:shortVersionString>0.1.0</sparkle:shortVersionString>
+      <sparkle:minimumSystemVersion>26.0</sparkle:minimumSystemVersion>
+      <description sparkle:format="markdown">Fourth beta. Notetaker now knows who you talk to in a Microsoft Teams call, and who says what.
+Beta 3 finds it within a day and asks to restart.
+
+## What changed
+
+- **Names from Teams.** During a Teams call, Notetaker reads the Teams window on your Mac. The
+  people on the stage become the attendees of the session, and a person who joins late is added.
+  The meeting title names a session that has no calendar event. No bot joins the call, and
+  nothing leaves the Mac (D33).
+- **A name on each line.** Teams shows who speaks. Notetaker reads that once a second, and at
+  the end it gives each line of the call audio the name of the person who spoke it. The action
+  items in the notes now have real owners.
+- **Access on a click only.** Choose "Name the people in Teams calls" in the menu, then turn on
+  Notetaker in System Settings &gt; Privacy &amp; Security &gt; Accessibility. Without this access,
+  sessions work as in beta 3.
+- **"Check for updates" works again after a download.** While a downloaded update waited for
+  the restart, the menu item did nothing. It now shows the update window again.
+
+## What to try
+
+- Give Notetaker the Accessibility access. Record a Teams call with two colleagues. At the end,
+  the attendees and each line of their speech carry their names, and the action items name
+  their owners.
+
+## Known gaps
+
+- Tested in a live Teams call with two synthetic voices, not yet with real people.
+- Teams in a language other than English, and Teams in a web browser, give no names.
+- People who are not on the Teams stage give no speaker names.
+- A guest line heard through the speakers can still show as "Me".</description>
+      <sparkle:fullReleaseNotesLink>https://github.com/fskroes/notetaker-updates/releases/tag/v0.1.0-beta.4</sparkle:fullReleaseNotesLink>
+      <enclosure url="https://github.com/fskroes/notetaker-updates/releases/download/v0.1.0-beta.4/Notetaker-0.1.0-beta.4.zip" length="18508453" type="application/octet-stream" sparkle:edSignature="jjcF9kVpA2mQSOE0YbVWN2dgX4BFoJQxkq3AacsP+yVHNG3PCzzyeqd4h5B2CerP3w8rQPCn/D6ylHk6c9hWDg==" />
+    </item>
+    <item>
       <title>Notetaker 0.1.0 beta 3</title>
       <pubDate>Thu, 24 Sep 2026 12:09:48 GMT</pubDate>
       <sparkle:version>3</sparkle:version>
