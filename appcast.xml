@@ -6,6 +6,42 @@
     <description>Updates for Notetaker</description>
     <language>en</language>
     <item>
+      <title>Notetaker 0.1.0 beta 5</title>
+      <pubDate>Wed, 30 Sep 2026 19:53:53 GMT</pubDate>
+      <sparkle:version>5</sparkle:version>
+      <sparkle:shortVersionString>0.1.0</sparkle:shortVersionString>
+      <sparkle:minimumSystemVersion>26.0</sparkle:minimumSystemVersion>
+      <description sparkle:format="markdown">Fifth beta. When the Teams names do not appear, Notetaker now tells you which step failed.
+Beta 4 finds it within a day and asks to restart.
+
+## What changed
+
+- **Every step that names a speaker logs.** Notetaker writes a line when it finds a Teams call,
+  when it sees who speaks, and when it names the voices at the end. When a step fails, the line
+  says why: no Accessibility access, no call found, a tile it does not know, no speaking ring,
+  or cues that named nobody. The log holds counts and states, not names (D34).
+- **"Save diagnostics" in the menu.** It writes a folder with the app and Mac facts, the log of
+  this run, and, while Teams runs, ten copies of the Teams window. The folder opens in the
+  Finder. Nothing leaves the Mac: you read the files and decide what to send.
+
+## What to try
+
+- Record a Teams call. While somebody speaks, choose "Save diagnostics" in the menu. It takes
+  some seconds. Send `about.txt` and `log.txt` from the folder. `teams.json` holds the names
+  in the call and any open chat text: read it before you send it.
+- After Stop, choose "Save diagnostics" again. The log then also holds the naming step.
+
+## Known gaps
+
+- The new logging is not yet tested in a live Teams call.
+- Teams in a language other than English, and Teams in a web browser, give no names. The log
+  now says so.
+- People who are not on the Teams stage give no speaker names.
+- A guest line heard through the speakers can still show as "Me".</description>
+      <sparkle:fullReleaseNotesLink>https://github.com/fskroes/notetaker-updates/releases/tag/v0.1.0-beta.5</sparkle:fullReleaseNotesLink>
+      <enclosure url="https://github.com/fskroes/notetaker-updates/releases/download/v0.1.0-beta.5/Notetaker-0.1.0-beta.5.zip" length="18569942" type="application/octet-stream" sparkle:edSignature="+x3eat9SOa7wY9MlYjeKMQKzTms6kHKChoxY826B1+gWCe0QSXYYt3mM4StfoulU86cs/3aDs+AQTA3aEaUfAQ==" />
+    </item>
+    <item>
       <title>Notetaker 0.1.0 beta 4</title>
       <pubDate>Sat, 26 Sep 2026 13:04:02 GMT</pubDate>
       <sparkle:version>4</sparkle:version>
