@@ -6,6 +6,50 @@
     <description>Updates for Notetaker</description>
     <language>en</language>
     <item>
+      <title>Notetaker 0.1.0 beta 6</title>
+      <pubDate>Thu, 08 Oct 2026 17:28:09 GMT</pubDate>
+      <sparkle:version>6</sparkle:version>
+      <sparkle:shortVersionString>0.1.0</sparkle:shortVersionString>
+      <sparkle:minimumSystemVersion>26.0</sparkle:minimumSystemVersion>
+      <description sparkle:format="markdown">Sixth beta. Notetaker now names speakers from what the people in the meeting call each other.
+Beta 5 finds it within a day and asks to restart.
+
+## What changed
+
+- **Names from name calls (D35).** When a voice has no name after the voiceprints and the Teams
+  names, Notetaker reads the transcript for three things:
+  - An introduction: "I'm Mark", "My name's Priya" or "Ik ben Sanne" names the voice that says it.
+  - A call: "Anna, what do you think?" points at the next voice. A voice needs two calls in two
+    turns, and all calls on that voice must give the same name.
+  - A thanks: "Thanks, Anna" supports a name that a call gave. A thanks never gives a name alone.
+- Only the names of attendees count: the people in the calendar event and the people in the
+  Teams call.
+- A name call never changes a name that a voiceprint or Teams gave.
+- This works in Zoom, Google Meet, Teams in a browser and Teams in another language. In those
+  calls, the Teams names give nothing.
+- **The naming log line** counts the name calls by kind, and the voices they named. When the
+  name calls name nobody, a second line says why. As in beta 5, the log holds counts, not names.
+
+## What to try
+
+- Record a meeting where the people call each other by name, in any call app. Put the meeting
+  in the calendar with its attendees, so that Notetaker knows the names.
+- After Stop, look at the speaker names. A wrong name: rename the speaker. Then choose
+  "Save diagnostics" and send `log.txt`. The lines that start with `Naming:` show what each step did.
+
+## Known gaps
+
+- The name calls were tested on 44 meetings that were written by hand, not recorded. On those
+  meetings they gave no wrong name and named 74 % of the voices. Real meetings can give a wrong
+  name. Rename it, and tell us the sentence that caused it.
+- A person whose name is said only once usually stays a number.
+- Name calls work in English and Dutch only.
+- People who are not on the Teams stage give no Teams names. Name calls can still name them.
+- A guest line heard through the speakers can still show as "Me".</description>
+      <sparkle:fullReleaseNotesLink>https://github.com/fskroes/notetaker-updates/releases/tag/v0.1.0-beta.6</sparkle:fullReleaseNotesLink>
+      <enclosure url="https://github.com/fskroes/notetaker-updates/releases/download/v0.1.0-beta.6/Notetaker-0.1.0-beta.6.zip" length="18610074" type="application/octet-stream" sparkle:edSignature="JNNXwdw6B2aGLPiJgfjcivNLE83AV5t6p1rP5mP4Qr5PLiv4VZckHV2Em59c+KPpqkJ1/5Wh/Hj3PjTJs2wEAQ==" />
+    </item>
+    <item>
       <title>Notetaker 0.1.0 beta 5</title>
       <pubDate>Wed, 30 Sep 2026 19:53:53 GMT</pubDate>
       <sparkle:version>5</sparkle:version>
