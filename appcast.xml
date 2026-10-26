@@ -6,6 +6,60 @@
     <description>Updates for Notetaker</description>
     <language>en</language>
     <item>
+      <title>Notetaker 0.1.0 beta 7</title>
+      <pubDate>Mon, 26 Oct 2026 22:02:04 GMT</pubDate>
+      <sparkle:version>7</sparkle:version>
+      <sparkle:shortVersionString>0.1.0</sparkle:shortVersionString>
+      <sparkle:minimumSystemVersion>26.0</sparkle:minimumSystemVersion>
+      <description sparkle:format="markdown">Seventh beta. Notetaker now writes Dutch transcripts, and Stop no longer hangs.
+Beta 6 finds it within a day and asks to restart.
+
+## What changed
+
+- **Dutch transcripts (D40).** A new menu item, "Transcript language", has English and
+  Nederlands.
+  - The choice holds for the next session. During a recording it also switches the session that
+    records now. The words from before the switch stay.
+  - Nederlands uses the Parakeet speech model on the Mac. The model is 470 MB. It downloads once,
+    when you pick Nederlands, and the first load takes about 40 s. The audio stays on the Mac.
+  - English stays on Apple's speech engine, which uses your personal dictionary.
+- **Read again (D40).** A session's page has a "Read again" menu: "Read again in English" or
+  "Read again in Nederlands". It reads the stored audio again in that language and writes the
+  notes again. The speakers and the names you gave stay. Use it for a meeting that was recorded
+  in the wrong language, while its audio is still on the Mac (30 days).
+- **Stop no longer hangs (D36).** A session could stay in "finalizing" for good. Stop now always
+  ends, and each finalizing step has a deadline that grows with the length of the audio.
+- **Sessions that a crash stopped are finished at the next launch (D38).** Notetaker reads them
+  again from their audio. After two failed tries, the session shows as failed.
+- **A silent system lane is reported (D36).** When a call app plays but the system lane records
+  only silence for 30 s, the session shows a failure line, and Notetaker tries a new audio tap.
+- **Teams names come back in new Teams builds (D37).** The roster and the speaking cues work
+  again in Teams 26261.
+- **Lane audio uses half the disk (D39).** The lane files are now 16-bit.
+- **Notetaker measures itself (D36).** `metrics.jsonl` holds one line per measure for about a
+  month: times, counts, memory, states. It never holds a name or a word. "Save diagnostics" adds
+  it to the folder.
+- **App Nap** stays off during a session, so a long meeting is not slowed down.
+
+## What to try
+
+- Pick Nederlands in "Transcript language", wait for the download, and record a Dutch meeting.
+- Open an old Dutch meeting that came out as English, and choose "Read again in Nederlands".
+- In a Teams call, check that the speakers get names. If not, choose "Save diagnostics" and send
+  the folder.
+
+## Known gaps
+
+- The personal dictionary does not reach a Dutch transcript yet.
+- The notes of a Dutch meeting are not measured yet. The note prompts are in English.
+- While the Dutch model loads for the first time, the menu does not say so.
+- Words from the personal dictionary can show up in the notes as if the meeting said them.
+- An action item can go to "Speaker 2" when the sentence names the person.
+- The meeting prompt banner is too tall.</description>
+      <sparkle:fullReleaseNotesLink>https://github.com/fskroes/notetaker-updates/releases/tag/v0.1.0-beta.7</sparkle:fullReleaseNotesLink>
+      <enclosure url="https://github.com/fskroes/notetaker-updates/releases/download/v0.1.0-beta.7/Notetaker-0.1.0-beta.7.zip" length="19004645" type="application/octet-stream" sparkle:edSignature="lmPYFBldd61guakDT2jTw6q59nqac+BT8xKOFbPtou0JwkAFLMMLlzWJ1MdpNPkDo252yB5+uRwAG8P0HJmnBA==" />
+    </item>
+    <item>
       <title>Notetaker 0.1.0 beta 6</title>
       <pubDate>Thu, 08 Oct 2026 17:28:09 GMT</pubDate>
       <sparkle:version>6</sparkle:version>
