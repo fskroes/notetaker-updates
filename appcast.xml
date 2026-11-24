@@ -6,6 +6,64 @@
     <description>Updates for Notetaker</description>
     <language>en</language>
     <item>
+      <title>Notetaker 0.1.0 beta 8</title>
+      <pubDate>Tue, 24 Nov 2026 10:09:07 GMT</pubDate>
+      <sparkle:version>8</sparkle:version>
+      <sparkle:shortVersionString>0.1.0</sparkle:shortVersionString>
+      <sparkle:minimumSystemVersion>26.0</sparkle:minimumSystemVersion>
+      <description sparkle:format="markdown">Eighth beta. Type your own notes during a meeting, and Notetaker writes notes that cover them.
+Dutch meetings now get Dutch notes and use your personal dictionary.
+Beta 7 finds it within a day and asks to restart.
+
+## What changed
+
+- **Your notes (D43).** While a session records, the live page has a "Your notes" field. Type a
+  few rough words there.
+  - The notes Notetaker writes cover each of your points that the meeting supports. A point the
+    meeting does not hold stays out of the notes.
+  - Notetaker saves your text while you type, so a crash keeps it. It is in search, on the
+    session page above the written notes, and in the export under "My notes".
+  - Notetaker reads the first 300 words. Above that, the field says "The notes use your first
+    300 words."
+  - When Notetaker stops a session by itself after a long silence, the last words you typed
+    still count.
+- **Each note links to its source (D43).** A decision, an action item or an open question shows
+  the transcript line it came from. A note with no clear source has no link.
+- **Copy notes (D43).** "Copy notes" on a session page, to the right of Export, or Shift
+  Command C, puts the notes on the pasteboard as Markdown: the same text as the export, without
+  the transcript.
+- **Dutch notes for a Dutch meeting (D45).** The summary and every note of a meeting in
+  Nederlands are in Dutch.
+- **Your personal dictionary reaches Dutch transcripts (D46).** A second small model finds the
+  dictionary words in the audio and corrects the transcript. The Dutch download is now 570 MB.
+  If you already have the Dutch model, the extra 98 MB comes at the next launch or language
+  pick.
+- **Dictionary words stay out of the notes when nobody said them.** The note writer gets only
+  the dictionary words that the meeting holds.
+- **The menu says when the Dutch model gets ready.** When the load takes longer than 3 s, the
+  menu shows "Preparing the speech model for Nederlands".
+- **Fewer invented notes.** An open question that the meeting answers, or does not hold, is
+  dropped. An action item no longer gets a due date such as "not named".
+- **Numbers in your notes.** "12" in your notes and "twelve" in the transcript count as the
+  same word.
+- **The export date is the same on every Mac.** For example: `2025-10-16 11:00, 32 min`.
+- **The meeting prompt banner** has the size of its card again.
+
+## What to try
+
+- In a meeting, type three or four points in "Your notes". After Stop, check that the notes
+  cover them.
+- Click the link of a decision and check that the transcript line says it.
+- Add a name to your personal dictionary, and record a Dutch meeting that says it.
+
+## Known gaps
+
+- An action item can still go to "Speaker 2" when the sentence names the person (D44).
+- Your notes are not tested in a real call yet.</description>
+      <sparkle:fullReleaseNotesLink>https://github.com/fskroes/notetaker-updates/releases/tag/v0.1.0-beta.8</sparkle:fullReleaseNotesLink>
+      <enclosure url="https://github.com/fskroes/notetaker-updates/releases/download/v0.1.0-beta.8/Notetaker-0.1.0-beta.8.zip" length="18644657" type="application/octet-stream" sparkle:edSignature="RN3WPO3uRfW5wCurT4OP4WDfvM709FtjuznzqRIIA/b4VYfEWxV7UhQsXmwtgNJJAVLMNlx4dBIqdt2voH+BDg==" />
+    </item>
+    <item>
       <title>Notetaker 0.1.0 beta 7</title>
       <pubDate>Mon, 26 Oct 2026 22:02:04 GMT</pubDate>
       <sparkle:version>7</sparkle:version>
